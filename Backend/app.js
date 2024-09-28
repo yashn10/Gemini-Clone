@@ -11,7 +11,7 @@ const genAI = new GoogleGenerativeAI(apiKey);
 app.use(express.json());
 
 app.use(cors({
-    origin: ['http://localhost:5173', 'https://gemini-clone-rosy-six.vercel.app/'],
+    origin: ['http://localhost:5173', 'https://gemini-clone-rosy-six.vercel.app'],
     methods: ['GET', 'POST', 'OPTIONS', 'DELETE', 'PUT', 'PATCH'],
     allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept'],
     credentials: true // Enable credentials
