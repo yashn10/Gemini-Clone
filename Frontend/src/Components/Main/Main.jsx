@@ -20,7 +20,7 @@ const Main = () => {
     setError(''); // Reset the error
     setLoading(true); // Show loader
     try {
-      const result = await axios.post('http://localhost:8000/api/generate', { prompt });
+      const result = await axios.post('https://gemini-clone-4n52.onrender.com/api/generate', { prompt });
       if (result.status === 200) {
         setLoading(false); // Hide loader
         displayStreamingResponse(result.data.response);
