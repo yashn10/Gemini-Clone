@@ -65,7 +65,7 @@ const Audio = () => {
         formData.append('audio', audioBlob, 'recording.webm');
 
         try {
-            const result = await axios.post('http://localhost:8000/transcribe', formData, {
+            const result = await axios.post('https://gemini-clone-4n52.onrender.com/transcribe', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },

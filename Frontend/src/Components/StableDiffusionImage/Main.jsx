@@ -23,7 +23,7 @@ const Main = () => {
         setLoading(true); // Show loader
 
         try {
-            const response = await axios.post('http://localhost:8000/image/stablediffusion', { inputs: prompt });
+            const response = await axios.post('https://gemini-clone-4n52.onrender.com/image/stablediffusion', { inputs: prompt });
             setimage(response.data.image || '');
             setLoading(false); // Hide loader
         } catch (error) {

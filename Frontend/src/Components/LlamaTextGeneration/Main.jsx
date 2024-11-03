@@ -27,7 +27,7 @@ const Text = () => {
         setLoading(true); // Show loader
 
         try {
-            const result = await axios.post('http://localhost:8000/chat', {
+            const result = await axios.post('https://gemini-clone-4n52.onrender.com/chat', {
                 messages: [...messages, userMessage],
             });
             setLoading(false); // Hide loader
